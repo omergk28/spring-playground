@@ -5,3 +5,8 @@ server:
     context-path: "/omer-api"
   port:
     8085
+
+
+api.services:
+  name: "aviation-api"
+  base-url: "https://api.aviationapi.com"
