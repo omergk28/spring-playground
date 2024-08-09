@@ -1,4 +1,10 @@
-spring.application.name: example
+spring:
+  application.name: example
+  threads.virtual.enabled: true
+  task:
+    execution:
+      simple:
+        concurrency-limit: 8
 
 server:
   servlet:

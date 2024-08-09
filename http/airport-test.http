@@ -1,0 +1,23 @@
+### GET request to example server
+GET localhost:8085/omer-api/example/block/AVL
+###
+
+### GET request to example server
+GET localhost:8085/omer-api/example/block/KTCL
+###
+
+### GET request to example server
+GET localhost:8085/omer-api/example/block/APN
+###
+
+### GET request to example server
+GET localhost:8085/omer-api/example/block/DTW
+###
+
+### GET request to example server
+GET localhost:8085/omer-api/example/async
+###
+
+###
+GET localhost:8085/omer-api/actuator/health
+###
