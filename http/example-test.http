@@ -1,0 +1,7 @@
+### GET request to example server
+GET localhost:8085/omer-api/example
+###
+
+###
+GET localhost:8085/omer-api/actuator/health
+###
