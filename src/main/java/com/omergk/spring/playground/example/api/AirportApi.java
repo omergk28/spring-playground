@@ -1,8 +1,8 @@
 package com.omergk.spring.playground.example.api;
 
 import java.util.concurrent.CompletableFuture;
+
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Component;
 import org.springframework.web.reactive.function.client.WebClient;
@@ -11,7 +11,11 @@ import org.springframework.web.reactive.function.client.WebClient;
 @Slf4j
 public class AirportApi {
 
-    @Autowired private WebClient webClient;
+    private final WebClient webClient;
+
+    public AirportApi(WebClient webClient) {
+        this.webClient = webClient;
+    }
 
     public String getAirportBlock(String airportCode) {
         log.info("calling getAirportBlock {}", airportCode);
